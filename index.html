@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song List</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="text-center">Available Songs</h1>
+      <div class="row my-5">
+        <div class="col">
+          <div class="table-responsive">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th>Artist</th>
+                        <th>Song</th>
+                    </tr>
+                </thead>
+              <tbody id="songList">
+                <tr>
+                  <td>Green Day</td>
+                  <td>Basket Case</td>
+                </tr>
+                <tr>
+                  <td>Joan Jett & the Blackhearts</td>
+                  <td>I Hate Myself For Loving You</td>
+                </tr>
+                <tr>
+                  <td>Rob Thomas</td>
+                  <td>Hold on Forever</td>
+                </tr>
+                <tr>
+                  <td>Sugarland</td>
+                  <td>Stuck Like Glue</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <form>
+        <div class="row mb-2">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Artist Name" id="artistInput"/>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Song Title" id="songInput"/>
+          </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+              <button type="submit" class="btn btn-primary" id="songSubmit">Submit</button>
+            </div>
+          </div>
+    </form>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
